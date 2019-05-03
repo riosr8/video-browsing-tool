@@ -1,0 +1,82 @@
+{
+  "name": "sdp-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "proxy": {
+    "/api/*": {
+      "target": "http://localhost:5000",
+      "changeOrigin": true
+    },
+    "/auth/*": {
+      "target": "http://localhost:5000",
+      "changeOrigin": true
+    },
+    "/register/*": {
+      "target": "http://localhost:5000",
+      "changeOrigin": true
+    }
+  },
+  "scripts": {
+    "install:local": "(cd src/client && npm install); (cd src/processingServer && npm install);(cd src/server && npm install);",
+    "dev:install": "npm install && npm run install:local",
+    "dev": "concurrently \"nodemon src/server/server.js\" \"npm run start\"",
+    "prettier": "prettier --write 'src/**/*.{js,jsx}'",
+    "lint": "eslint --debug src/",
+    "lint:write": "eslint --debug src/ --fix",
+    "test": "npm run --prefix src/client test  && npm run --prefix src/server test",
+    "test:watch": "jest --watch",
+    "test:coverage": "npm run clientTest:coverage && npm run serverTest:coverage",
+    "clientTest": "jest -u",
+    "clientTest:coverage": "jest --coverage --colors -u",
+    "serverTestDev": "NODE_ENV=test mocha src/server/test/ --recursive --exit",
+    "serverTest": "mocha src/server/test/ --recursive --exit",
+    "serverTest:coverage": " nyc --reporter=lcov nyc npm run serverTest"
+  },
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js|jsx)": [
+      "npm run lint:write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "eslint-cli": "^1.1.1",
+    "prettier": "^1.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-jest-enzyme": "^6.0.2",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-chai-expect": "^2.0.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.9.1",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0"
+  }
+}

@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout HOC should render without crashing if no token present 1`] = `
+Array [
+  <div>
+    <div
+      className="ui huge inverted top attached menu"
+      style={
+        Object {
+          "backgroundColor": "#e11b37",
+        }
+      }
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="header item"
+          onClick={[Function]}
+        >
+          Behaviorics
+        </div>
+        <a
+          aria-current="page"
+          className="item active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Home
+        </a>
+        <div
+          className="right menu"
+        >
+          <a
+            aria-current={null}
+            className="item"
+            href="/signup"
+            onClick={[Function]}
+          >
+            Sign Up
+          </a>
+          <a
+            aria-current={null}
+            className="item"
+            href="/login"
+            onClick={[Function]}
+          >
+            Log In
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <main>
+    <div>
+      Test
+    </div>
+  </main>,
+]
+`;
+
+exports[`Layout HOC should render without crashing if token present 1`] = `
+Array [
+  <div>
+    <div
+      className="ui huge inverted top attached menu"
+      style={
+        Object {
+          "backgroundColor": "#e11b37",
+        }
+      }
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="header item"
+          onClick={[Function]}
+        >
+          Behaviorics
+        </div>
+        <a
+          aria-current="page"
+          className="item active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Home
+        </a>
+        <a
+          aria-current={null}
+          className="item"
+          href="/dashboard?pageNo=1&sortVal=time&order=asc"
+          onClick={[Function]}
+        >
+          Dashboard
+        </a>
+        <a
+          aria-current={null}
+          className="item"
+          href="/process-status"
+          onClick={[Function]}
+        >
+          Process Status
+        </a>
+        <div
+          className="right menu"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+          >
+            Signed in as undefined
+          </div>
+          <a
+            aria-current={null}
+            className="item"
+            href="/logout"
+            onClick={[Function]}
+          >
+            Log Out
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <main>
+    <div>
+      Test
+    </div>
+  </main>,
+]
+`;

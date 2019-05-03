@@ -1,0 +1,389 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App root should render without crashing if no token present 1`] = `
+Array [
+  <div>
+    <div
+      className="ui huge inverted top attached menu"
+      style={
+        Object {
+          "backgroundColor": "#e11b37",
+        }
+      }
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="header item"
+          onClick={[Function]}
+        >
+          Behaviorics
+        </div>
+        <a
+          aria-current="page"
+          className="item active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Home
+        </a>
+        <div
+          className="right menu"
+        >
+          <a
+            aria-current={null}
+            className="item"
+            href="/signup"
+            onClick={[Function]}
+          >
+            Sign Up
+          </a>
+          <a
+            aria-current={null}
+            className="item"
+            href="/login"
+            onClick={[Function]}
+          >
+            Log In
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <main>
+    <div>
+      <div
+        className="ui inverted vertical center aligned segment"
+        style={
+          Object {
+            "backgroundColor": "#e11b37",
+            "minHeight": 500,
+            "padding": "1em 0em",
+          }
+        }
+      >
+        <img
+          className="ui small image"
+          src="https://spme.org/wp-content/uploads/sites/5/2016/02/university-of-houston.png"
+          style={
+            Object {
+              "margin": "auto",
+            }
+          }
+        />
+        <h1
+          className="ui inverted header"
+          style={
+            Object {
+              "fontSize": "4em",
+              "paddingTop": "0.6em",
+              "textAlign": "center",
+            }
+          }
+        >
+          Video Browsing Tool
+        </h1>
+        <h2
+          className="ui inverted header"
+          style={
+            Object {
+              "fontSize": "1.5em",
+              "paddingTop": "0.8em",
+              "textAlign": "center",
+            }
+          }
+        >
+          In partnership with the University of Houston
+        </h2>
+        <div
+          className="ui grid"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="center aligned column"
+            >
+              <a
+                aria-current={null}
+                href="/signup"
+                onClick={[Function]}
+              >
+                <button
+                  className="ui huge basic inverted button"
+                  onClick={[Function]}
+                >
+                  Get Started
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui container"
+        style={
+          Object {
+            "backgroundColor": "white",
+            "height": "100%",
+            "marginTop": "0.44em",
+            "postion": "fixed",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "paddingTop": "3em",
+            }
+          }
+        >
+          <h3
+            className="ui header"
+            style={
+              Object {
+                "fontSize": "3em",
+              }
+            }
+          >
+            Purpose
+          </h3>
+          <p
+            style={
+              Object {
+                "color": "black",
+                "fontSize": "1.33em",
+                "paddingLeft": "1em",
+                "paddingRight": "1em",
+              }
+            }
+          >
+            Video camera surveillance systems are common mode of monitoring human behavior in both public and private infrastructures. The need for enhanced security and the decline in cost of modern camera systems has led to the deployment of huge surveillance systems with thousands of cameras. These cameras produce and store large quantities of video data, which require analysis. Computer vision algorithms like object detection, face recognition can provide rich semantic information regarding the contents of the video. However, this would require us to gather video file and pass it to numerous computer vision algorithms, and manually read the output from the algorithm to interpret the results. The objective of the video browsing tool is to create a seamless pipeline, that can allow the users to upload and browse the video; and automatically process them using computer vision algorithms and display results.
+          </p>
+        </div>
+        <div
+          style={
+            Object {
+              "paddingTop": "3em",
+            }
+          }
+        >
+          <h1
+            className="ui header"
+            style={
+              Object {
+                "fontSize": "3em",
+              }
+            }
+          >
+            About us
+          </h1>
+          <p
+            style={
+              Object {
+                "color": "black",
+                "fontSize": "1.33em",
+                "paddingLeft": "1em",
+                "paddingRight": "1em",
+              }
+            }
+          >
+            Behaviorics is a computer vision start-up with focus on building model for analyzing and predicting human behavior for the purpose of enhancing security and quality of human living. The current focus of Behaviorics is to enable processing of live video capture by surveillance cameras.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>,
+]
+`;
+
+exports[`App root should render without crashing if token present 1`] = `
+Array [
+  <div>
+    <div
+      className="ui huge inverted top attached menu"
+      style={
+        Object {
+          "backgroundColor": "#e11b37",
+        }
+      }
+    >
+      <div
+        className="ui container"
+      >
+        <div
+          className="header item"
+          onClick={[Function]}
+        >
+          Behaviorics
+        </div>
+        <a
+          aria-current="page"
+          className="item active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Home
+        </a>
+        <a
+          aria-current={null}
+          className="item"
+          href="/dashboard?pageNo=1&sortVal=time&order=asc"
+          onClick={[Function]}
+        >
+          Dashboard
+        </a>
+        <a
+          aria-current={null}
+          className="item"
+          href="/process-status"
+          onClick={[Function]}
+        >
+          Process Status
+        </a>
+        <div
+          className="right menu"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+          >
+            Signed in as undefined
+          </div>
+          <a
+            aria-current={null}
+            className="item"
+            href="/logout"
+            onClick={[Function]}
+          >
+            Log Out
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <main>
+    <div>
+      <div
+        className="ui inverted vertical center aligned segment"
+        style={
+          Object {
+            "backgroundColor": "#e11b37",
+            "minHeight": 500,
+            "padding": "1em 0em",
+          }
+        }
+      >
+        <img
+          className="ui small image"
+          src="https://spme.org/wp-content/uploads/sites/5/2016/02/university-of-houston.png"
+          style={
+            Object {
+              "margin": "auto",
+            }
+          }
+        />
+        <h1
+          className="ui inverted header"
+          style={
+            Object {
+              "fontSize": "4em",
+              "paddingTop": "0.6em",
+              "textAlign": "center",
+            }
+          }
+        >
+          Video Browsing Tool
+        </h1>
+        <h2
+          className="ui inverted header"
+          style={
+            Object {
+              "fontSize": "1.5em",
+              "paddingTop": "0.8em",
+              "textAlign": "center",
+            }
+          }
+        >
+          In partnership with the University of Houston
+        </h2>
+      </div>
+      <div
+        className="ui container"
+        style={
+          Object {
+            "backgroundColor": "white",
+            "height": "100%",
+            "marginTop": "0.44em",
+            "postion": "fixed",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "paddingTop": "3em",
+            }
+          }
+        >
+          <h3
+            className="ui header"
+            style={
+              Object {
+                "fontSize": "3em",
+              }
+            }
+          >
+            Purpose
+          </h3>
+          <p
+            style={
+              Object {
+                "color": "black",
+                "fontSize": "1.33em",
+                "paddingLeft": "1em",
+                "paddingRight": "1em",
+              }
+            }
+          >
+            Video camera surveillance systems are common mode of monitoring human behavior in both public and private infrastructures. The need for enhanced security and the decline in cost of modern camera systems has led to the deployment of huge surveillance systems with thousands of cameras. These cameras produce and store large quantities of video data, which require analysis. Computer vision algorithms like object detection, face recognition can provide rich semantic information regarding the contents of the video. However, this would require us to gather video file and pass it to numerous computer vision algorithms, and manually read the output from the algorithm to interpret the results. The objective of the video browsing tool is to create a seamless pipeline, that can allow the users to upload and browse the video; and automatically process them using computer vision algorithms and display results.
+          </p>
+        </div>
+        <div
+          style={
+            Object {
+              "paddingTop": "3em",
+            }
+          }
+        >
+          <h1
+            className="ui header"
+            style={
+              Object {
+                "fontSize": "3em",
+              }
+            }
+          >
+            About us
+          </h1>
+          <p
+            style={
+              Object {
+                "color": "black",
+                "fontSize": "1.33em",
+                "paddingLeft": "1em",
+                "paddingRight": "1em",
+              }
+            }
+          >
+            Behaviorics is a computer vision start-up with focus on building model for analyzing and predicting human behavior for the purpose of enhancing security and quality of human living. The current focus of Behaviorics is to enable processing of live video capture by surveillance cameras.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>,
+]
+`;

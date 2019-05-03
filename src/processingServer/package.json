@@ -1,0 +1,41 @@
+{
+  "name": "video-browsing-tool-mock-processing-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "processor.js",
+  "scripts": {
+    "processor": "nodemon processor.js",
+    "test": "mocha ./test/ --recursive --exit",
+    "test:coverage": " nyc --reporter=lcov nyc npm run test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "bluebird": "^3.5.4",
+    "chai": "^4.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "mocha": "^6.1.4",
+    "mongoose": "^5.5.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-chai-expect": "^2.0.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "nodemon": "^1.18.11",
+    "nyc": "^13.3.0",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  }
+}

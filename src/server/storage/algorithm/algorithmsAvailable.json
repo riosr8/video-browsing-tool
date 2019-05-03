@@ -1,0 +1,19 @@
+{
+  "algorithms":[
+    {
+      "id":1,
+      "name": "Algorithm 1",
+      "description": "Performs face detection on the Video"
+    },
+    {
+      "id":2,
+      "name": "Algorithm 2",
+      "description": "Performs dog detection on the Video"
+    },
+    {
+      "id":3,
+      "name": "Algorithm 3",
+      "description": "Detects objects with red color in the Video"
+    }
+  ]
+}

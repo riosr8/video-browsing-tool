@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Auth reducer should handle AUTH_LOGOUT 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle BEGIN_FORM_ERROR_CHECKING 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle LOGIN_FAIL 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": "fail",
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle LOGIN_START 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": true,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle LOGIN_SUCCESS 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": "token",
+  "userId": "userid",
+}
+`;
+
+exports[`Auth reducer should handle REGISTRATION_FAIL 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": "fail",
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle REGISTRATION_START 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": true,
+  "registering": true,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle REGISTRATION_SUCCESS 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": false,
+  "registering": false,
+  "registrationComplete": true,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle RESET_REGISTRATION_COMPLETED 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle SET_AUTH_REDIRECT_PATH 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle SET_FORM_ERROR_END 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": "fail",
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should handle SET_FORM_ERROR_START 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;
+
+exports[`Auth reducer should return the initial state 1`] = `
+Object {
+  "authRedirectPath": "/",
+  "error": null,
+  "loading": false,
+  "registering": false,
+  "registrationComplete": false,
+  "token": null,
+  "userId": null,
+}
+`;

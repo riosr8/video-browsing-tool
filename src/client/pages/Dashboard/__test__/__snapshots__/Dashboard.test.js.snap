@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard render without crashing with user videos 1`] = `ReactWrapper {}`;
+
+exports[`Dashboard renders if no query params specified 1`] = `ReactWrapper {}`;
+
+exports[`Dashboard renders with all query params specified 1`] = `ReactWrapper {}`;
+
+exports[`Dashboard renders without crashing while fetching 1`] = `ReactWrapper {}`;
+
+exports[`Dashboard renders without crashing with default props 1`] = `ReactWrapper {}`;

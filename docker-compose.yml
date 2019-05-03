@@ -1,0 +1,68 @@
+version: '3'
+
+services:
+  db:
+    image: mongo:latest
+    expose:
+      - 27017
+    ports:
+      - 27017:27017
+    restart: always
+    volumes:
+      - mongodata:/data/db
+  server:
+    build:
+      context: ./src/server
+      dockerfile: Dockerfile
+    expose:
+      - 5000
+    environment:
+      - MONGO_URI=mongodb://db:27017/sdpDev
+      - NODE_ENV=dev
+      - DEV_APP_PORT=5000
+      - DB_SECRET=mysecret
+      - AUTH_SECRET=sdpSecret
+    ports:
+      - 5000:5000
+    volumes:
+      - ./src/server:/app/server
+      - '/app/server/node_modules'
+    command: nodemon -L server.js
+    links:
+      - db
+    restart: on-failure
+  processing-server:
+    build:
+      context: ./src/processingServer
+      dockerfile: Dockerfile
+    command: nodemon -L processesor.js
+    environment:
+      - MONGO_URI=mongodb://db:27017/sdpDev
+      - NODE_ENV=dev
+      - DEV_APP_PORT=5000
+      - DB_SECRET=mysecret
+      - AUTH_SECRET=sdpSecret
+    volumes:
+      - ./src/processingServer:/app/processingServer
+      - '/app/processingServer/node_modules'
+    links:
+      - db
+  client:
+    build:
+      context: ./src/client
+      dockerfile: Dockerfile
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src/client:/app/client
+      - ./src/client/public:/app/client/public
+      - '/app/client/node_modules'
+    links:
+      - server
+    command: npm run start
+    restart: on-failure
+volumes:
+  mongodata:
+

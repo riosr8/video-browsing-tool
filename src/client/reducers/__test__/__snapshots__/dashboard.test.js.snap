@@ -1,0 +1,471 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard reducer should handle AUTH_LOGOUT 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle CLEAR_MESSAGE 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle DELETE_VIDEO_FAIL 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": "fail",
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle DELETE_VIDEO_START 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": true,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle DELETE_VIDEO_SUCCESS 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": "success",
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle FETCH_ALGORITHMS_FAIL 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": undefined,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle FETCH_ALGORITHMS_START 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle FETCH_ALGORITHMS_SUCCESS 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": "success",
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle FETCH_RESULTS_FAIL 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": "fail",
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle FETCH_RESULTS_START 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": true,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle FETCH_RESULTS_SUCCESS 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": Array [
+    Object {
+      "videoUuid": "437b4a03-d2d7-4862-87e4-55ecf555cb47big_buck_bunny.mp4",
+    },
+  ],
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle FETCH_VIDEOS_FAIL 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": "fail",
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle FETCH_VIDEOS_START 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": true,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle FETCH_VIDEOS_SUCCESS 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": undefined,
+  "uploading": false,
+  "userVideos": Array [
+    Object {
+      "__v": 0,
+      "_id": "5c8f0e406745e00852125e82",
+      "userId": "test@gmail.com",
+      "videoLength": "60.095",
+      "videoName": "437b4a03-d2d7-4862-87e4-55ecf555cb47big_buck_bunny.mp4",
+      "videoThumbnail": "437b4a03-d2d7-4862-87e4-55ecf555cb47big_buck_bunny.png",
+      "videoUuid": "437b4a03-d2d7-4862-87e4-55ecf555cb47big_buck_bunny.mp4",
+    },
+  ],
+}
+`;
+
+exports[`Dashboard reducer should handle REQUEST_PROCESSING_FAIL 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": "fail",
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle REQUEST_PROCESSING_START 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": true,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle REQUEST_PROCESSING_SUCCESS 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle SET_ACTIVE_PAGE 1`] = `
+Object {
+  "activePage": undefined,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle SET_SORT_KEY 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": undefined,
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle SET_SORT_ORDER 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": undefined,
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle UPLOAD_VIDEO_FAIL 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": "fail",
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle UPLOAD_VIDEO_START 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": true,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should handle UPLOAD_VIDEO_SUCCESS 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": "success",
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;
+
+exports[`Dashboard reducer should return the initial state 1`] = `
+Object {
+  "activePage": 1,
+  "algorithms": Array [],
+  "deleting": false,
+  "error": null,
+  "fetching": false,
+  "fetchingResults": false,
+  "requestProcessing": false,
+  "results": null,
+  "sortKey": "time",
+  "sortOrder": "asc",
+  "success": null,
+  "totalPages": 1,
+  "uploading": false,
+  "userVideos": Array [],
+}
+`;

@@ -1,0 +1,122 @@
+// Dashbord 
+
+Status 
+
+User -> 
+  video 1   -> {
+    status: "partialDone" or "Done" or "Started"
+  }
+  video 2   -> processed or processing 
+  video 3   -> processed or processing 
+
+
+<<<---Video Result --->> Video 1
+Algo 1 - array 
+Algo2 - video
+Algo 3  - Array 
+
+1st request 
+To be processed : [1,2]
+Processed:[]
+prcessing:[]
+
+2nd request 
+To be processed : [3,4]
+Processed:[]
+prcessing:[1,2]
+
+
+To be processed : []
+Processed:[1,2]
+prcessing:[3,4]
+
+To be processed : []
+Processed:[1,2,3,4]
+prcessing:[]
+
+------------------------------------------------------------------------------------------------------------------------
+Video 1; 
+1st request 
+To be processed : [1]
+Processed:[]
+prcessing:[]
+
+2st request 
+To be processed : [1,2]
+Processed:[]
+prcessing:[1]
+
+To be processed : []
+Processed:[]
+prcessing:[1,2]
+
+// POLL 
+To be processed : []
+Processed:[1,2]
+prcessing:[]
+
+------------------------------------------------------------------------------------------------------------------------
+
+// Collection 
+{
+  videoUuid: 1,
+  toBeProcessed: [],
+  processed: [],
+  processing: [],
+},
+{
+  videoUuid: 2,
+  toBeProcessed: [],
+  processed: [],
+  processing: [],
+}
+
+
+/algo 
+ {
+  uuid:
+  algos[]
+}
+
+// 
+status -- get
+[
+  {
+    uuid:1 
+    processed: [algo1]
+    processing: [algo2]
+  }
+  {
+    uuid:2 
+    processed: [algo1]
+    processing: [algo2]
+  }
+]
+
+----------------------------------------------------
+Result per video 
+{
+  videoUuid: 2,
+  results: [
+    {
+      key: 'Algorithm 1',
+      value: '1',
+      text: 'Algorithm 1',
+      id: '1',
+      result:
+        'https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8',
+      type: 'video',
+    }
+
+
+  ]
+  algo1:{
+    Array 
+  },
+  algo2:{
+    Link for the video 
+  },
+  algo3:{
+    message: "under processing"
+  }
+}
