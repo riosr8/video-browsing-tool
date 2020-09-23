@@ -57,11 +57,9 @@ module.exports = env => {
         proxy: [
         {
           context: ['/auth', '/api', '/register', '/noAuth'],
-          target: {
-            host: "server",
-            protocol: 'http:',
-            port: 5000
-          },
+          target: "http://localhost:5000",
+          secure: false,
+          changeOrigin: true
         }]
       },
       plugins: [

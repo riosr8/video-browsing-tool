@@ -20,7 +20,7 @@
   "scripts": {
     "install:local": "(cd src/client && npm install); (cd src/processingServer && npm install);(cd src/server && npm install);",
     "dev:install": "npm install && npm run install:local",
-    "dev": "concurrently \"nodemon src/server/server.js\" \"npm run start\"",
+    "dev": "concurrently 'nodemon src/server/server.js' 'npm run start --prefix src/client/'",
     "prettier": "prettier --write 'src/**/*.{js,jsx}'",
     "lint": "eslint --debug src/",
     "lint:write": "eslint --debug src/ --fix",
@@ -47,7 +47,7 @@
     ]
   },
   "dependencies": {
-    "concurrently": "^4.1.0",
+    "concurrently": "^5.3.0",
     "eslint-cli": "^1.1.1",
     "prettier": "^1.17.0"
   },
@@ -77,6 +77,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.9.1",
     "husky": "^1.1.2",
-    "lint-staged": "^7.3.0"
+    "lint-staged": "^7.3.0",
+    "nodemon": "^2.0.4"
   }
 }

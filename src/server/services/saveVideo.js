@@ -13,8 +13,8 @@ module.exports = {
         .then(metaData => {
           resolve(metaData.format.duration);
         })
-        .catch(() => {
-          reject(new Error('Video format not right'));
+        .catch(err => {
+          reject(new Error('Video format not right', err));
         });
     });
   },

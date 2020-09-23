@@ -1,24 +1,22 @@
-// module.exports = {
-//   secret: 'sdpSecret',
-// };
+// const env = process.env.NODE_ENV || 'dev';
+const NODE_ENV = process.env.NODE_ENV || 'production';
 
-const env = process.env.NODE_ENV || 'dev'; // 'dev' or 'test'
-const devPort = parseInt(process.env.DEV_APP_PORT) || 5000;
-const mongoUri = process.env.MONGO_URI || 'mongodb://localhost:27017/sdpTrial1';
-const dbSecret = process.env.DB_SECRET || 'mysecret';
-const authSecret = process.env.AUTH_SECRET || 'sdpSecret';
+const PORT = parseInt(process.env.PORT);
+const { MONGO_URI } = process.env;
+const { DB_SECRET } = process.env;
+const { AUTH_SECRET } = process.env;
 const appRoot = require('app-root-path');
 
 const dev = {
   app: {
-    port: devPort,
+    port: 5000,
   },
   db: {
-    database: mongoUri,
-    secret: dbSecret,
+    database: 'mongodb://localhost:27017/sdpTrial1',
+    secret: 'mysecret',
   },
   authenticationSecret: {
-    secret: authSecret,
+    secret: 'sdpSecret',
   },
   staticPaths: {
     video: `${appRoot}/storage/uploads/`,
@@ -28,6 +26,27 @@ const dev = {
     video: `${appRoot}/storage/algorithmOutputs/outputVideo.mp4`,
   },
 };
+
+const production = {
+  db: {
+    database: MONGO_URI,
+    secret: DB_SECRET,
+  },
+  app: {
+    port: PORT,
+  },
+  authenticationSecret: {
+    secret: AUTH_SECRET,
+  },
+  staticPaths: {
+    video: `${appRoot}/storage/uploads/`,
+    screenShot: `${appRoot}/storage/screenshots/`,
+  },
+  outputVideoPath: {
+    video: `${appRoot}/storage/algorithmOutputs/outputVideo.mp4`,
+  },
+};
+
 const test = {
   app: {
     port: parseInt(process.env.TEST_APP_PORT) || 3000,
@@ -51,6 +70,7 @@ const test = {
 const config = {
   dev,
   test,
+  production,
 };
 
-module.exports = config[env];
+module.exports = config[NODE_ENV];

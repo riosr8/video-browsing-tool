@@ -24,12 +24,12 @@ router.post('/login', bodyParser.json(), (req, res, next) => {
       if (error) {
         res.send(error);
       }
-      const token = jwt.sign(
-        JSON.stringify({ email: user.email, password: user.password }),
-        config.authenticationSecret.secret,
-      );
+      const token = jwt.sign({ email: user.email }, config.authenticationSecret.secret, {
+        expiresIn: '1h',
+      });
+
       res.status(200);
-      return res.json({ email: user.email, token, expiresIn: 3600000 });
+      return res.json({ email: user.email, token });
     });
   })(req, res);
 });

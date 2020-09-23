@@ -19,7 +19,9 @@ conn();
 const db = mongoose.connection;
 // eslint-disable-next-line no-unused-vars
 db.on('error', err => {
-  setTimeout(() => conn(), 10000);
+  // setTimeout(() => conn(), 10000);
+  console.log('Could not connect to db', err);
+  process.exit(0);
 });
 db.once('open', () => console.log('Successfully connected to mongo'));
 
