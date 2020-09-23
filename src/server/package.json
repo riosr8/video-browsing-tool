@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=dev nodemon server.js",
+    "start": "NODE_ENV=production node server.js",
+    "start:dev": "NODE_ENV=dev nodemon server.js",
     "server": "NODE_ENV=production nodemon server.js",
     "serverTestDev": "NODE_ENV=test mocha ./test/ --recursive --exit",
     "test": "NODE_ENV=test mocha ./test/ --recursive --exit",

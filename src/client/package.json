@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --config webpack.base.config.js --devtool inline-source-map --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag --host 0.0.0.0",
+    "start": "webpack --mode production --config webpack.prod.js --env.PLATFORM=production",
+    "dev": "webpack-dev-server --mode development --config webpack.base.config.js --devtool inline-source-map --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag --host 0.0.0.0",
     "test:coverage": "jest --coverage --colors -u",
     "test": "jest -u"
   },

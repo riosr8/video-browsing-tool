@@ -18,6 +18,9 @@
     }
   },
   "scripts": {
+    "start:prod": "NODE_ENV=production npm run start:prod --prefix src/server/",
+    "heroku-postbuild": "npm run build",
+    "build": "npm run build --prefix src/client/",
     "install:local": "(cd src/client && npm install); (cd src/processingServer && npm install);(cd src/server && npm install);",
     "dev:install": "npm install && npm run install:local",
     "dev": "concurrently 'nodemon src/server/server.js' 'npm run start --prefix src/client/'",

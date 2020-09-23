@@ -1,10 +1,5 @@
-// const env = process.env.NODE_ENV || 'dev';
-const NODE_ENV = process.env.NODE_ENV || 'production';
+const { MONGO_URI, DB_SECRET, AUTH_SECRET, NODE_ENV = 'production', PORT } = process.env;
 
-const PORT = parseInt(process.env.PORT);
-const { MONGO_URI } = process.env;
-const { DB_SECRET } = process.env;
-const { AUTH_SECRET } = process.env;
 const appRoot = require('app-root-path');
 
 const dev = {
@@ -33,7 +28,7 @@ const production = {
     secret: DB_SECRET,
   },
   app: {
-    port: PORT,
+    port: parseInt(PORT),
   },
   authenticationSecret: {
     secret: AUTH_SECRET,

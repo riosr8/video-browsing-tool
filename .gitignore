@@ -33,3 +33,5 @@ ehthumbs_vista.db
 
 src/server/storage/screenshots/
 src/server/storage/uploads/
+
+.env
